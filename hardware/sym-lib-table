@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "oled_face")(type "KiCad")(uri "${KIPRJMOD}/libs/oled_face.kicad_sym")(options "")(descr "OLED Pixel Face project symbols"))
+)
