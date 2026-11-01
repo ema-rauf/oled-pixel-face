@@ -1,23 +1,3 @@
-/*
- * OLED Pixel Face Display
- * ESP32 DevKit V1 + SSD1306 128x64 I2C OLED + 2 buttons
- *
- * Wiring:
- *   OLED VCC -> 3V3, GND -> GND, SDA -> GPIO21, SCL -> GPIO22
- *   Next-expression button : GPIO25 <-> GND
- *   Sleep/wake button      : GPIO26 <-> GND
- *   (buttons use the ESP32 internal pull-ups, no resistors needed)
- *
- * Controls:
- *   Next button   short press : next face (turns auto mode off)
- *                 hold 0.7 s  : previous face (turns auto mode off)
- *   Sleep button  short press : sleep / wake
- *                 hold 0.7 s  : auto mode on/off (only while awake)
- *   Auto mode changes the face every 2.5 s.
- *
- * Libraries: Adafruit SSD1306, Adafruit GFX Library
- */
-
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
